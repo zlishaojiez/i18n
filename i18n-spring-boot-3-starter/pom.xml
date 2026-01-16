@@ -7,7 +7,7 @@
     <artifactId>i18n-spring-boot-3-starter</artifactId>
     <version>1.0.0</version>
     <name>i18n-spring-boot-3-starter</name>
-    <description>i18n-spring-boot-3-starter</description>
+    <description>Internationalisation Spring Boot 3</description>
 
     <url>https://github.com/zlishaojiez/i18n</url>
 
