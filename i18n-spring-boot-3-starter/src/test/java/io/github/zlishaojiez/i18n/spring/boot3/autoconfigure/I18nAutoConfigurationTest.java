@@ -9,7 +9,8 @@ import io.github.zlishaojiez.i18n.spring.boot3.autoconfigure.service.I18nService
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(classes = { I18nSpringBoot3Application.class, I18nAutoConfiguration.class}, properties = {"i18n.resolver=header", "i18n.parameter=accept-language"})
+@SpringBootTest(classes = { I18nSpringBoot3Application.class, I18nAutoConfiguration.class},
+        properties = {"i18n.resolver=header", "i18n.parameter=accept-language"})
 class I18nAutoConfigurationTest {
 
     @Autowired

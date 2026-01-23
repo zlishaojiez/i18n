@@ -41,7 +41,7 @@ public class I18nServiceImpl implements I18nService {
 
     private String getDefaultNoSuchMessage(final String code) {
         final Locale locale = LocaleContextHolder.getLocale();
-        return this.getMessage(DEFAULT_MESSAGE_CODE, new Object[] { code, locale.getDisplayName() }, "");
+        return this.getMessage(DEFAULT_MESSAGE_CODE, new Object[] {code, locale.getDisplayName()}, "");
     }
 
 }

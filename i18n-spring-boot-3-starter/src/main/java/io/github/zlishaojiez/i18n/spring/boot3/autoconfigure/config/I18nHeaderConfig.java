@@ -41,7 +41,7 @@ public class I18nHeaderConfig {
 
         private final String parameter;
 
-        public HeaderLocaleResolver(final String parameter) {
+        HeaderLocaleResolver(final String parameter) {
             this.parameter = parameter;
         }
 
@@ -61,7 +61,7 @@ public class I18nHeaderConfig {
 
                 final List<Locale> locales = this.parseLocales(request);
 
-                return !locales.isEmpty() ? locales.getFirst() : defaultLocale;
+                return !locales.isEmpty() ? locales.get(0) : defaultLocale;
             }
         }
 
@@ -76,12 +76,12 @@ public class I18nHeaderConfig {
             final Enumeration<String> values = request.getHeaders(this.parameter);
 
             final TreeMap<Double, ArrayList<Locale>> localesMap = new TreeMap<>();
-            while(values.hasMoreElements()) {
+            while (values.hasMoreElements()) {
                 final String value = values.nextElement();
                 this.parseLocalesHeader(value, localesMap);
             }
 
-            for(final ArrayList<Locale> list : localesMap.values()) {
+            for (final ArrayList<Locale> list : localesMap.values()) {
                 locales.addAll(list);
             }
 
@@ -96,7 +96,7 @@ public class I18nHeaderConfig {
                 return;
             }
 
-            for(final AcceptLanguage acceptLanguage : acceptLanguages) {
+            for (final AcceptLanguage acceptLanguage : acceptLanguages) {
                 final Double key = -acceptLanguage.getQuality();
                 locales.computeIfAbsent(key, (k) -> new ArrayList<>()).add(acceptLanguage.getLocale());
             }

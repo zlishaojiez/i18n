@@ -38,7 +38,7 @@ public class I18nEnvironmentConfig {
         private final Environment environment;
         private final String parameter;
 
-        public EnvironmentLocaleResolver(final Environment environment, final String parameter) {
+       EnvironmentLocaleResolver(final Environment environment, final String parameter) {
             this.environment = environment;
             this.parameter = parameter;
         }
