@@ -5,7 +5,7 @@
 
     <groupId>io.github.zlishaojiez</groupId>
     <artifactId>i18n-spring-boot-3-starter</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <name>i18n-spring-boot-3-starter</name>
     <description>Internationalisation Spring Boot 3</description>
 
@@ -44,6 +44,7 @@
     </distributionManagement>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>17</java.version>
         <springboot3.version>3.5.9</springboot3.version>
         <checkstyle.version>13.0.0</checkstyle.version>
