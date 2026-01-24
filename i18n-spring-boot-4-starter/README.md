@@ -15,18 +15,6 @@ The project can choose the following methods for parsing locale through the spri
 
 ### Maven Dependency
 
-#### Spring Boot 3
-
-    ```xml
-        <dependency>
-            <groupId>io.github.zlishaojiez</groupId>
-            <artifactId>i18n-spring-boot-3-starter</artifactId>           
-            <version>1.1.3</version>
-        </dependency>
-    ```
-    
-#### Spring Boot 4
-
     ```xml
         <dependency>
             <groupId>io.github.zlishaojiez</groupId>
