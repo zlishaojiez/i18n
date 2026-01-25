@@ -21,7 +21,7 @@ The project can choose the following methods for parsing locale through the spri
         <dependency>
             <groupId>io.github.zlishaojiez</groupId>
             <artifactId>i18n-spring-boot-3-starter</artifactId>           
-            <version>1.1.3</version>
+            <version>1.1.4</version>
         </dependency>
     ```
     
